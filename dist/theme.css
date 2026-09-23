@@ -150,3 +150,43 @@ html[data-theme=light] .header.is-scrolled{background:linear-gradient(135deg,#f9
 html[data-theme=light] .header .brand-dot{color:#8153c5;text-shadow:0 0 14px #a855f740}html[data-theme=light] .header .nav nav>a:not(.nav-contact):hover{color:#7142b5;text-shadow:0 0 16px #a855f740}html[data-theme=light] .header .theme-toggle{color:#664585;background:#ffffff80;border-color:#9a74c733}
 @media(max-width:900px) and (min-width:761px){.header .nav{gap:14px;padding:0 18px}.header .nav nav{gap:17px}.header .theme-label{display:none}.header .theme-toggle{width:42px;padding:0}}
 @media(max-width:760px){.header{top:12px;width:calc(100% - 24px);height:64px;border-radius:16px}.header .nav{padding:0 15px;gap:12px}.header .brand{font-size:29px}.header .nav-actions{gap:8px}.header .menu-toggle{border-radius:50%;background:#a855f70d;border-color:#cba8ff26}.header .nav nav{top:75px;left:0;width:100%;margin:0;padding:22px;border:1px solid #b77bf147;border-radius:16px;gap:15px;background:#13101ff7;box-shadow:0 0 30px -8px #a855f766,0 18px 35px -15px #0009;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}.header .nav nav>a{font-size:16px}.header .nav .nav-contact{padding:11px 24px}.header.is-scrolled{box-shadow:0 0 30px 2px #a855f75c,0 0 60px 5px #7c3aed30,0 10px 30px -12px #0009}html[data-theme=light] .header .nav nav{background:#fcf9fff7;border-color:#9b74c742;box-shadow:0 0 30px -8px #a855f740,0 18px 35px -15px #49206633}html[data-theme=light] .header .menu-toggle{background:#fff9;border-color:#9a74c733}}
+
+/* Dark-mode lighting: ink surfaces, violet edge lights and restrained bloom. */
+html[data-theme=dark]{--surface:#121321;--muted:#b0acc4;--border:#b5a0ff30}
+html[data-theme=dark] body{background:radial-gradient(ellipse 70% 650px at 0 1150px,#6634c515,transparent 75%),radial-gradient(ellipse 60% 700px at 100% 2350px,#414dcc12,transparent 75%),var(--bg)}
+html[data-theme=dark] .hero{background:radial-gradient(ellipse 55% 22% at 50% 100%,#7653ff20,transparent 80%)}
+html[data-theme=dark] .hero-eyebrow{border-color:#bda4ff50;box-shadow:inset 0 1px #ffffff12,0 0 28px #8954f522;color:#ded1fb}
+html[data-theme=dark] .hero .showcase:before{opacity:.85;background:#805bff55}
+html[data-theme=dark] .serif-word{color:#ddd2ff;text-shadow:0 0 38px #aa7cff38}
+html[data-theme=dark] .primary{border-color:#d3bbff80;box-shadow:inset 0 1px 2px #ffffff70,0 4px 20px #8152f94d,0 0 42px #7549ed24}
+html[data-theme=dark] .primary:is(:hover,:focus-visible){box-shadow:inset 0 1px 2px #fff8,0 6px 28px #9562ff73,0 0 60px #8252f93d}
+html[data-theme=dark] .secondary:is(:hover,:focus-visible){border-color:#bea4ff80;box-shadow:inset 0 1px #ffffff18,0 0 25px #8355de2e}
+html[data-theme=dark] :is(.service-card,.quote-grid figure,.contact-form,.about-identity){border-color:#b49aef35;box-shadow:inset 0 1px #e4d7ff12,0 12px 36px #00000026,0 0 35px #804bdf0a}
+html[data-theme=dark] .service-card{background:radial-gradient(ellipse at 0 0,#8555cc20,transparent 65%),linear-gradient(145deg,#1a172b,#10121d);transition:border-color .3s,transform .3s,box-shadow .3s}
+html[data-theme=dark] .service-main{background:radial-gradient(ellipse at 0 0,#9260ef35,transparent 65%),linear-gradient(145deg,#201a34,#11131f)}
+html[data-theme=dark] .service-card:before{content:'';position:absolute;top:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,#cfb5ffb3,transparent);box-shadow:0 0 14px 1px #a475ff40;pointer-events:none}
+html[data-theme=dark] .service-card:focus-within{border-color:#bd99ff8c;box-shadow:inset 0 1px #ead9ff24,0 12px 36px #0004,0 0 34px #8d5bf02b}
+html[data-theme=dark] .icon-box{color:#dbc5ff;border-color:#c59fff66;background:linear-gradient(145deg,#a267ed3d,#6d53bd12);box-shadow:inset 0 1px #ead9ff3d,0 0 22px #a16cff26}
+html[data-theme=dark] .eyebrow{color:#beace4}
+html[data-theme=dark] .muted{color:#a8a1bc}
+html[data-theme=dark] .work-section{background:radial-gradient(ellipse 70% 420px at 50% 0,#7952d51c,transparent 80%),linear-gradient(#10101b9e,#0a0a126e);border-color:#b195ee24}
+html[data-theme=dark] :is(.preview-card,.project-image,.email-preview,.social-gallery button){border-color:#bba2ed45;box-shadow:0 12px 32px #0004,0 0 22px #8154d714;transition:border-color .3s,box-shadow .3s,translate .4s,transform .4s}
+html[data-theme=dark] .filters button.active{background:linear-gradient(135deg,#65429766,#362447);border-color:#c0a0ff50;box-shadow:inset 0 1px #ead8ff22,0 0 18px #a36dff1f}
+html[data-theme=dark] .process-grid article:before{box-shadow:0 0 18px #b184ff70}
+html[data-theme=dark] .about-section{background:radial-gradient(ellipse at 0 70%,#7541ca24,transparent 65%)}
+html[data-theme=dark] .about-identity{background:radial-gradient(ellipse at 50% 65%,#7347b833,transparent 70%),linear-gradient(130deg,#20192f,#0c0d17)}
+html[data-theme=dark] .identity-monogram{text-shadow:0 2px #fff8,0 0 75px #a171fa66}
+html[data-theme=dark] .quote-grid figure{background:radial-gradient(ellipse at 0 0,#8751d212,transparent 75%),linear-gradient(145deg,#191522,#10111c)}
+html[data-theme=dark] .contact-section{background:radial-gradient(ellipse at 85% 20%,#6439ae24,transparent 65%),#0d0b14;border-color:#b58ae638}
+html[data-theme=dark] .contact-glow{background:#8246df55}
+html[data-theme=dark] .contact-form{background:linear-gradient(135deg,#241c36c9,#13101ec9);border-color:#b99aea52;box-shadow:inset 0 1px #e8d4ff21,0 20px 60px #0003,0 0 65px #8347ce17}
+html[data-theme=dark] .contact-form :is(input:not([type=checkbox]),textarea):focus{border-color:#c0a0ff;box-shadow:0 0 0 3px #ad7cf51a,0 0 20px #9055da1f}
+html[data-theme=dark] .service-options input:checked+span{background:#8958c733;box-shadow:0 0 15px #9b65e224}
+html[data-theme=dark] .liquid-text{filter:drop-shadow(0 0 22px #a171fa40)}
+@media(hover:hover) and (pointer:fine){
+  html[data-theme=dark] .service-card:hover{border-color:#bd99ff8c;box-shadow:inset 0 1px #ead9ff24,0 16px 40px #0004,0 0 34px #8d5bf02b}
+  html[data-theme=dark] :is(.preview-card,.email-preview,.social-gallery button):hover,html[data-theme=dark] .project:hover .project-image{border-color:#c5a2ff99;box-shadow:0 16px 36px #0004,0 0 32px #9b65ed30}
+  html[data-theme=dark][data-motion=full] .service-card:after{background:radial-gradient(300px circle at var(--glow-x,50%) var(--glow-y,50%),#bd91ff26,transparent 75%)}
+}
+html[data-theme=dark] :is(.preview-card,.email-preview,.social-gallery button):focus-visible,html[data-theme=dark] .project:focus-visible .project-image{border-color:#d2b5ff;box-shadow:0 0 30px #9b65ed40}
+@media(max-width:760px){html[data-theme=dark] .contact-form{box-shadow:inset 0 1px #e8d4ff21,0 12px 30px #0003,0 0 30px #8347ce17}}
